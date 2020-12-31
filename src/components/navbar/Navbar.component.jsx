@@ -1,11 +1,13 @@
 import React from "react";
-import "./Navbar.styles";
+import { Nav, NavContainer, NavLogo } from "./Navbar.styles";
 
 const Navbar = () => {
   return (
-    <div>
-      <h1>Navbar</h1>
-    </div>
+    <Nav>
+      <NavContainer>
+        <NavLogo>dolla</NavLogo>
+      </NavContainer>
+    </Nav>
   );
 };
 
