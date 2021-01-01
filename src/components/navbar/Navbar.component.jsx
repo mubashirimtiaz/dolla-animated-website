@@ -5,25 +5,41 @@ import {
   NavContainer,
   NavLogo,
   MobileIcon,
-  FaBars,
   NavMenu,
   NavItem,
   NavLink,
+  NavBtn,
+  NavBtnLink,
 } from "./Navbar.styles";
 
-const Navbar = () => {
+const Navbar = ({ toggleIsOpen }) => {
   return (
     <Nav>
       <NavContainer>
         <NavLogo to="/">dolla</NavLogo>
         <MobileIcon>
-          <FaBars />
+          <FaBars onClick={toggleIsOpen} />
         </MobileIcon>
         <NavMenu>
           <NavItem>
             <NavLink to="about">About</NavLink>
           </NavItem>
+          <NavItem>
+            <NavLink to="discover">Discover</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink to="services">Services</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink to="signup">Sign Up</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink to="about">About</NavLink>
+          </NavItem>
         </NavMenu>
+        <NavBtn>
+          <NavBtnLink to="signin">Sign In</NavBtnLink>
+        </NavBtn>
       </NavContainer>
     </Nav>
   );

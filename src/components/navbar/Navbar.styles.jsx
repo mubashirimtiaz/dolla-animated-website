@@ -26,11 +26,11 @@ export const NavContainer = styled.div`
   z-index: 1;
   width: 100%;
   padding: 0 24px;
-  max-widht: 1100px;
+  max-width: 1100px;
 `;
 
 export const NavLogo = styled(LinkR)`
-  color: red;
+  color: #fff;
   display: flex;
   justify-self: flex-start;
   cursor: pointer;
@@ -43,7 +43,7 @@ export const NavLogo = styled(LinkR)`
 
 export const MobileIcon = styled.div`
   display: "none";
-  @media screen and (max-widht: 768px) {
+  @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
     top: 0;
@@ -51,6 +51,7 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
+    color: #fff;
   }
 `;
 
@@ -62,7 +63,7 @@ export const NavMenu = styled.ul`
   margin-right: -22px;
   padding: 0;
 
-  @media screen and (max-width: 768) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
@@ -82,5 +83,31 @@ export const NavLink = styled(LinkS)`
 
   &:active {
     border-bottom: 3px solid #01bf71;
+  }
+`;
+
+export const NavBtn = styled.nav`
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const NavBtnLink = styled(LinkR)`
+  border-radius: 50px;
+  background-color: #01bf71;
+  white-space: nowrap;
+  padding: 10px 22px;
+  color: #010606;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
   }
 `;

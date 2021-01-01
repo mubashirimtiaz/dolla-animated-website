@@ -1,13 +1,8 @@
 import "./App.css";
-import { Navbar, Footer } from "./components";
+import Home from "./pages/home/Home.page";
 
 const App = () => {
-  return (
-    <div>
-      <Navbar />
-      <Footer />
-    </div>
-  );
+  return <Home />;
 };
 
 export default App;
